@@ -32,15 +32,10 @@ body {
 
 main {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .timer {
   font-size: 6rem;
-  text-align: center;
   color: #c6e2ff;
   animation: neon 0.08s ease-in-out infinite alternate;
 }
