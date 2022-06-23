@@ -11,7 +11,7 @@ setInterval(() => {
     anio = fecha.getFullYear(),
     //Parrafo Fecha
     fechaReloj = document.getElementById("fecha"),
-    //Hora Hora
+    //Parrafo Hora
     horaReloj = document.getElementById("hora");
 
   let semana = [
