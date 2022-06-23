@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Agregar etiquetas meta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vibur&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reloj</title>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <div class="timer">
+          <p class="m-0" id="fecha"></p>
+        </div>
+        <div class="timer mt-2">
+          <p class="m-0" id="hora"></p>
+        </div>
+        <div class="text-center mt-5">
+          <button class="btn mx-4 btn-pink" onclick="changeColorPink()">
+            Pink
+          </button>
+          <button class="btn mx-4 btn-blue" onclick="changeColorBlue()">
+            Blue
+          </button>
+          <button class="btn mx-4 btn-green" onclick="changeColorGreen()">
+            Green
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/reloj.js"></script>
+  </body>
+</html>

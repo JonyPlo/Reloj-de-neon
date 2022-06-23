@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+}
+
+/* Variables */
+
+:root {
+  --shadow-from-1: rgba(255, 123, 171, 0.576);
+  --shadow-from-2: rgba(255, 123, 171, 0.722);
+  --shadow-from-3: rgba(255, 123, 171, 0.515);
+  --shadow-from-4: rgba(255, 123, 171, 0.655);
+  --shadow-from-5: rgba(255, 123, 171, 0.579);
+  --shadow-to-1: rgba(255, 123, 171, 0.58);
+  --shadow-to-2: rgba(255, 123, 171, 0.7);
+  --shadow-to-3: rgba(255, 123, 171, 0.8);
+  --shadow-to-4: rgb(255, 123, 171, 0.88);
+  --shadow-to-5: rgb(255, 123, 171, 1);
+}
+
+/* General Styles */
+
+body {
+  font-family: "Vibur", cursive;
+  font-size: 1rem;
+  background-image: url("https://www.dropbox.com/s/2ct0i6kc61vp0bh/wall.jpg?raw=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #141414;
+}
+
+main {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  font-size: 6rem;
+  text-align: center;
+  color: #c6e2ff;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+/*-- Animation Keyframes --*/
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 12px var(--shadow-from-1), 0 0 12px var(--shadow-from-2),
+      0 0 12px var(--shadow-from-3), 0 0 12px var(--shadow-from-4),
+      0 0 12px var(--shadow-from-5);
+  }
+  to {
+    text-shadow: 0 0 12px var(--shadow-to-1), 0 0 12px var(--shadow-to-2),
+      0 0 12px var(--shadow-to-3), 0 0 12px var(--shadow-to-4),
+      0 0 12px var(--shadow-to-5);
+  }
+}
+
+/* Buttons */
+
+.btn-pink {
+  font-size: 4rem;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-pink:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ff7bac, 0 0 10px #ff7bac, 0 0 20px #ff7bac,
+    0 0 40px #ff7bac, 0 0 80px #ff7bac, 0 0 90px #ff7bac;
+}
+
+.btn-blue {
+  font-size: 4rem;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-blue:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #7bacff, 0 0 10px #7bacff, 0 0 20px #7bacff,
+    0 0 40px #7bacff, 0 0 80px #7bacff, 0 0 90px #7bacff, 0 0 100px #7bacff;
+}
+
+.btn-green {
+  font-size: 4rem;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-green:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #7bffce, 0 0 10px #7bffce, 0 0 20px #7bffce,
+    0 0 40px #7bffce, 0 0 80px #7bffce, 0 0 90px #7bffce, 0 0 100px #7bffce;
+}
+
+.btn:focus {
+  outline-color: none;
+  box-shadow: none;
+}
