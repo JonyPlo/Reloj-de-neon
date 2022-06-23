@@ -72,6 +72,7 @@ main {
   color: #ffffff;
   text-shadow: 0 0 5px #ff7bac, 0 0 10px #ff7bac, 0 0 20px #ff7bac,
     0 0 40px #ff7bac, 0 0 80px #ff7bac, 0 0 90px #ff7bac;
+  border-color: transparent;
 }
 
 .btn-blue {
@@ -84,6 +85,7 @@ main {
   color: #ffffff;
   text-shadow: 0 0 5px #7bacff, 0 0 10px #7bacff, 0 0 20px #7bacff,
     0 0 40px #7bacff, 0 0 80px #7bacff, 0 0 90px #7bacff, 0 0 100px #7bacff;
+  border-color: transparent;
 }
 
 .btn-green {
@@ -96,9 +98,15 @@ main {
   color: #ffffff;
   text-shadow: 0 0 5px #7bffce, 0 0 10px #7bffce, 0 0 20px #7bffce,
     0 0 40px #7bffce, 0 0 80px #7bffce, 0 0 90px #7bffce, 0 0 100px #7bffce;
+  border-color: transparent;
+}
+
+.btn:active {
+  color: #fff;
+  border-color: transparent;
 }
 
 .btn:focus {
-  outline-color: none;
-  box-shadow: none;
+  color: #fff;
+  border-color: transparent;
 }

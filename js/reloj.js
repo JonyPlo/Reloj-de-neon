@@ -1,23 +1,4 @@
-// window.setTimeout(function () {
-//   alert("Holis!!");
-// }, 4000); //Este metodo me ayuda a ejecutar una funcion despues de un tiempo establecido
-
-// setTimeout(() => alert("Holis!!"), 4000); //Manera corta
-
-// -----------------------------------------------------------
-
-// let contador = 1;
-// let tiempo = setInterval(contar, 1000);
-
-// function contar() {
-//   if (contador === 15) {
-//     clearInterval(tiempo);
-//   }
-//   document.write(contador + "<br>");
-//   contador++;
-// }
-
-// -----------------------------------------------------------
+// Reloj
 
 setInterval(() => {
   let fecha = new Date(),
